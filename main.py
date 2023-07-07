@@ -32,43 +32,18 @@ class quiz:
 
     questions.append(question(
         # Key
-        "abc",
+        "pottery",
         # Question
-        "What is the name of this bot?",
+        "What role did Volundr have in Norse mythology?",
         # Answers
-        ["volundrbot",
-        "22",
-        "23",
-        "24"],
+        ["A blacksmith from Norse myths, who was enslaved by a king but crafted wings for himself and flew away.",
+        "A hammer owned by x", # TODO
+        "A close friend to the royal family and self-proclaimed holy man"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
         "0",
         # Text hint
-        "Don't eat the yellow snow\!",
-        # Photo hint
         "",
-        # GPS hint
-        # Long
-        33.5973,
-        # Lat
-        73.0479
-    ))
-
-    questions.append(question(
-        # Key
-        "def",
-        # Question
-        "What is 1 \+ 1?",
-        # Answers
-        ["0",
-        "1",
-        "2",
-        "3"],
-        # Correct Answer
-        # a = 0     b = 1   c = 2   d = 3
-        "2",
-        # Text hint
-        "Don't eat the yellow snow\!",
         # Photo hint
         "",
         # GPS hint
@@ -80,26 +55,145 @@ class quiz:
 
     questions.append(question(
         # Key
-        "ghi",
+        "minimize",
         # Question
-        "What is 0 \+ 1?",
+        "Which of the following units of measurement is NOT real?",
         # Answers
-        ["0",
-        "1",
-        "2",
-        "3"],
+        ["Tesla",
+        "Siemens",
+        "Philips"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
-        "1",
+        "2",
         # Text hint
-        "Don't eat the yellow snow\!",
+        "",
         # Photo hint
         "",
         # GPS hint
         # Long
-        33.5973,
+        0,
         # Lat
-        73.0479
+        0
+    ))
+
+    questions.append(question(
+        # Key
+        "expansion",
+        # Question
+        "What is the total capacitance when two capacitors with a capacitance of 100uF are placed in parallel?",
+        # Answers
+        ["50uF",
+        "100uF",
+        "200uF",
+        "400uF"],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "2",
+        # Text hint
+        "",
+        # Photo hint
+        "",
+        # GPS hint
+        # Long
+        0,
+        # Lat
+        0
+    ))
+
+    questions.append(question(
+        # Key
+        "leadership",
+        # Question
+        "",
+        # Answers
+        ["",
+        "",
+        "",
+        ""],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "",
+        # Text hint
+        "",
+        # Photo hint
+        "",
+        # GPS hint
+        # Long
+        0,
+        # Lat
+        0
+    ))
+
+    questions.append(question(
+        # Key
+        "temptation",
+        # Question
+        "",
+        # Answers
+        ["",
+        "",
+        "",
+        ""],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "",
+        # Text hint
+        "",
+        # Photo hint
+        "",
+        # GPS hint
+        # Long
+        0,
+        # Lat
+        0
+    ))
+
+    questions.append(question(
+        # Key
+        "detective",
+        # Question
+        "",
+        # Answers
+        ["",
+        "",
+        "",
+        ""],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "",
+        # Text hint
+        "",
+        # Photo hint
+        "",
+        # GPS hint
+        # Long
+        0,
+        # Lat
+        0
+    ))
+
+    questions.append(question(
+        # Key
+        "genuine",
+        # Question
+        "asylum",
+        # Answers
+        ["",
+        "",
+        "",
+        ""],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "",
+        # Text hint
+        "",
+        # Photo hint
+        "",
+        # GPS hint
+        # Long
+        0,
+        # Lat
+        0
     ))
 
     @classmethod
