@@ -34,6 +34,29 @@ class quiz:
         # Key
         "pottery",
         # Question
+        "What is the name of this activity?",
+        # Answers
+        ["Foxhunt!",
+        "Cathunt", # TODO
+        "Doghunt"],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "0",
+        # Text hint
+        "",
+        # Photo hint
+        "",
+        # GPS hint
+        # Long
+        56.1234,
+        # Lat
+        11.1234
+    ))
+
+    questions.append(question(
+        # Key
+        "pottery",
+        # Question
         "What role did Volundr have in Norse mythology?",
         # Answers
         ["A blacksmith from Norse myths, who was enslaved by a king but crafted wings for himself and flew away.",
@@ -61,7 +84,8 @@ class quiz:
         # Answers
         ["Tesla",
         "Siemens",
-        "Philips"],
+        "Philips",
+        "Watt"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
         "2",
@@ -104,15 +128,15 @@ class quiz:
         # Key
         "leadership",
         # Question
-        "",
+        "vraag",
         # Answers
-        ["",
-        "",
-        "",
-        ""],
+        ["1",
+        "2",
+        "3",
+        "4"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
-        "",
+        "1",
         # Text hint
         "",
         # Photo hint
@@ -128,15 +152,15 @@ class quiz:
         # Key
         "temptation",
         # Question
-        "",
+        "vraag",
         # Answers
-        ["",
-        "",
-        "",
-        ""],
+        ["1",
+        "2",
+        "3",
+        "4"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
-        "",
+        "1",
         # Text hint
         "",
         # Photo hint
@@ -152,15 +176,15 @@ class quiz:
         # Key
         "detective",
         # Question
-        "",
+        "vraag",
         # Answers
-        ["",
-        "",
-        "",
-        ""],
+        ["1",
+        "2",
+        "3",
+        "4"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
-        "",
+        "1",
         # Text hint
         "",
         # Photo hint
@@ -176,15 +200,15 @@ class quiz:
         # Key
         "genuine",
         # Question
-        "asylum",
+        "vraag",
         # Answers
-        ["",
-        "",
-        "",
-        ""],
+        ["1",
+        "2",
+        "3",
+        "4"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
-        "",
+        "1",
         # Text hint
         "",
         # Photo hint
