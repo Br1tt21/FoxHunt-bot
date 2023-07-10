@@ -1,10 +1,14 @@
+import os
+from math import sin, cos, sqrt, atan2, radians, pi, degrees
+from dotenv import load_dotenv
+
 import telebot
 from telebot import types
 
 # Bot V 2.4
 
 # Token aquired over Telegram, see API for more info
-BotToken  = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+BotToken  = os.getenv('TELEGRAM_BOT_TOKEN')
 
 class question:
     def __init__(self, key, question, answers, correctAnswer, textHint, photoHint, long, lat):
@@ -28,76 +32,552 @@ class quiz:
     questions = []
 
     questions.append(question(
+        # punt 1
         # Key
-        "abc",
+        "goodluck",
         # Question
-        "What is the name of this bot?",
+        "What is the name of this activity?",
         # Answers
-        ["volundrbot",
-        "22",
-        "23",
-        "24"],
+        ["Foxhunt!",
+        "Cathunt",
+        "Doghunt"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
         "0",
         # Text hint
-        "Don't eat the yellow snow\!",
-        # Photo hint
         "",
+        # Photo hint
+        "pictures/point1.jpg",
         # GPS hint
         # Long
-        33.5973,
+        51.390488,
         # Lat
-        73.0479
+        5.554589
     ))
 
     questions.append(question(
+        # punt 10
         # Key
-        "def",
+        "genuine",
         # Question
-        "What is 1 \+ 1?",
+        "What role did Volundr have in Norse mythology? He/it was :",
         # Answers
-        ["0",
-        "1",
-        "2",
-        "3"],
+        ["A blacksmith who crafted wings",
+        "King Ragnar Lothbrok's hammer", 
+        "A self-proclaimed holy man"],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "0",
+        # Text hint
+        "",
+        # Photo hint
+        "pictures/point10.jpg",
+        # GPS hint
+        # Long
+        51.389648,
+        # Lat
+        5.551176
+    ))
+
+    questions.append(question(
+        # punt 4
+        # Key
+        "expansion",
+        # Question
+        "What is the total capacitance when two capacitors with a capacitance of 100uF are placed in parallel?",
+        # Answers
+        ["50uF",
+        "100uF",
+        "200uF",
+        "400uF"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
         "2",
         # Text hint
-        "Don't eat the yellow snow\!",
-        # Photo hint
         "",
+        # Photo hint
+        "pictures/point4.jpg",
         # GPS hint
         # Long
-        0,
+        51.388279,
         # Lat
-        0
+        5.552619
     ))
 
     questions.append(question(
+        # punt 14
         # Key
-        "ghi",
+        "pottery",
         # Question
-        "What is 0 \+ 1?",
+        "Which of the following units of measurement is NOT real?",
         # Answers
-        ["0",
-        "1",
+        ["Tesla",
+        "Siemens",
+        "Philips",
+        "Watt"],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
         "2",
-        "3"],
+        # Text hint
+        "",
+        # Photo hint
+        "pictures/point14.jpg",
+        # GPS hint
+        # Long
+        51.387615,
+        # Lat
+        5.550548
+    ))
+
+    questions.append(question(
+        # punt 16
+        # Key
+        "detective",
+        # Question
+        "What frequency does the 5G network use?",
+        # Answers
+        ["4.9-5.1GHz",
+        "24-47 GHz",
+        "2-3GHz",
+        "5GHz"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
         "1",
         # Text hint
-        "Don't eat the yellow snow\!",
-        # Photo hint
         "",
+        # Photo hint
+        "pictures/point16.jpg",
         # GPS hint
         # Long
-        33.5973,
+        51.386436,
         # Lat
-        73.0479
+        5.550095
     ))
+
+    questions.append(question(
+        # punt 19
+        # Key
+        "temptation",
+        # Question
+        "What does IEEE stand for?",
+        # Answers
+        ["Institute of Electrical and Electronics Engineers",
+        "International Electrical Engineering Expo",
+        "Institute of Electrical and Electronics Expo",
+        "Institute of Electrical and Electronical Engineering"],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "0",
+        # Text hint
+        "",
+        # Photo hint
+        "pictures/point19.jpg",
+        # GPS hint
+        # Long
+        51.385052,
+        # Lat
+        5.548051
+    ))
+
+    questions.append(question(
+        # punt 20
+        # Key
+        "leadership",
+        # Question
+        "Which electrical engineer and entrepreneur cofounded Apple Inc alongside Steve Jobs?",
+        # Answers
+        ["Bill Gates",
+        "Larry Page",
+        "Elon Musk",
+        "Steve Wozniak"],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "3",
+        # Text hint
+        "",
+        # Photo hint
+        "pictures/point20.jpg",
+        # GPS hint
+        # Long
+        51.384529,
+        # Lat
+        5.550787
+    ))
+
+    questions.append(question(
+        # punt 22
+        # Key
+        "minimize",
+        # Question
+        "In electrical engineering, what does the term 'ground' typically refer to?",
+        # Answers
+        ["The connection to the Earth in an electrical circuit",
+        "A type of insulating material",
+        "The highest potential point in a circuit",
+        "A safety mechanism to prevent electric shock"],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "0",
+        # Text hint
+        "This is the final location! Search for fire and you will find the treasure!",
+        # Photo hint
+        "pictures/point22.jpg",
+        # GPS hint
+        # Long
+        51.382748,
+        # Lat
+        5.549260
+    ))
+
+    # questions.append(question(
+    #     # punt 2
+    #     # Key
+    #     "pottery",
+    #     # Question
+    #     "What role did Volundr have in Norse mythology? He/it was :",
+    #     # Answers
+    #     ["A blacksmith who crafted wings",
+    #     "King Ragnar Lothbrok's hammer", 
+    #     "A self-proclaimed holy man"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "0",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point2.jpg",
+    #     # GPS hint
+    #     # Long
+    #     0,
+    #     # Lat
+    #     0
+    # ))
+
+    # questions.append(question(
+    #     # punt 3
+    #     # Key
+    #     "minimize",
+    #     # Question
+    #     "Which of the following units of measurement is NOT real?",
+    #     # Answers
+    #     ["Tesla",
+    #     "Siemens",
+    #     "Philips",
+    #     "Watt"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "2",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point3.jpg",
+    #     # GPS hint
+    #     # Long
+    #     0,
+    #     # Lat
+    #     0
+    # ))
+
+    # questions.append(question(
+    #     # punt 5
+    #     # Key
+    #     "leadership",
+    #     # Question
+    #     "What frequency does the 5G network use?",
+    #     # Answers
+    #     ["4.9-5.1GHz",
+    #     "24-47 GHz",
+    #     "2-3GHz",
+    #     "5GHz"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point5.jpg",
+    #     # GPS hint
+    #     # Long
+    #     0,
+    #     # Lat
+    #     0
+    # ))
+
+    # questions.append(question(
+    #     # punt 6
+    #     # Key
+    #     "temptation",
+    #     # Question
+    #     "What does IEEE stand for?",
+    #     # Answers
+    #     ["Institute of Electrical and Electronics Engineers",
+    #     "International Electrical Engineering Expo",
+    #     "Institute of Electrical and Electronics Expo",
+    #     "Institute of Electrical and Electronical Engineering"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "0",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point6.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.388668,
+    #     # Lat
+    #     5.550944
+    # ))
+
+    # questions.append(question(
+    #     # punt 7
+    #     # Key
+    #     "detective",
+    #     # Question
+    #     "Which electrical engineer and entrepreneur co-founded Apple Inc. alongside Steve Jobs?",
+    #     # Answers
+    #     ["Bill Gates",
+    #     "Larry Page",
+    #     "Elon Musk",
+    #     "Steve Wozniak"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "3",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point7.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.389198,
+    #     # Lat
+    #     5.550808
+    # ))
+
+    # questions.append(question(
+    #     # TODO: beetje matie vraag
+    #     # punt 8
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "In electrical engineering, what does the term \"ground\" typically refer to?",
+    #     # Answers
+    #     ["The connection to the Earth in an electrical circuit",
+    #     "A type of insulating material",
+    #     "The highest potential point in a circuit",
+    #     "A safety mechanism to prevent electric shock"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "0",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point8.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.389198,
+    #     # Lat
+    #     5.550808
+    # ))
+
+    # questions.append(question(
+    #     # punt 9
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point9.jpg",
+    #     # GPS hint
+    #     # Long
+    #     0,
+    #     # Lat
+    #     0
+    # ))
+
+    # questions.append(question(
+    #     # punt 11
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point11.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.388161,
+    #     # Lat
+    #     5.551170
+    # ))
+
+    # questions.append(question(
+    #     # punt 12
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point12.jpg",
+    #     # GPS hint
+    #     # Long
+    #     0,
+    #     # Lat
+    #     0
+    # ))
+
+    # questions.append(question(
+    #     # punt 13
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point13.jpg",
+    #     # GPS hint
+    #     # Long
+    #     0,
+    #     # Lat
+    #     0
+    # ))
+
+    # questions.append(question(
+    #     # punt 15
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point15.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.387184,
+    #     # Lat
+    #     5.550110
+    # ))
+
+    # questions.append(question(
+    #     # punt 17
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point17.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.386188,
+    #     # Lat
+    #     5.548547
+    # ))
+
+    # questions.append(question(
+    #     # punt 18
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point18.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.385658,
+    #     # Lat
+    #     5.549006
+    # ))
+
+    # questions.append(question(
+    #     # punt 21
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point21.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.383633,
+    #     # Lat
+    #     5.550105
+    # ))
 
     @classmethod
     def nrQuestions(cls):
@@ -148,7 +628,7 @@ Good Luck \U0001F340\, may the best team win \.\.\.\."
 def startMessage(message):
     VolundrBot.send_chat_action(message.chat.id, 'typing')
     VolundrBot.reply_to(message, welcomeMessage)
-    foxPhoto = open('./pics/FoxHunt.png', 'rb')
+    foxPhoto = open('./pictures/FoxHunt.jpeg', 'rb')
     VolundrBot.send_photo(message.chat.id, foxPhoto)
 
     uFirstName, uLastName, uID = str(message.from_user.first_name), str(message.from_user.last_name), str(message.from_user.id)
@@ -216,6 +696,7 @@ def query_handler(call):
         quiz.questions[questionNr].correct = 2
         VolundrBot.send_message(call.message.chat.id, response)
         VolundrBot.edit_message_reply_markup(call.message.chat.id, call.message.message_id)
+
     if quiz.answeredQuestions() == quiz.nrQuestions():
         finalizeQuizClient(call.message.chat.id)
     elif quiz.questions[questionNr].textHint != "" or quiz.questions[questionNr].textHint != "" or quiz.questions[questionNr].long != 0 or quiz.questions[questionNr].lat != 0:
@@ -270,12 +751,50 @@ def giveHint(chatID, questionNr):
         VolundrBot.send_photo(chatID, hintPhoto)
 
     if quiz.questions[questionNr].long != 0 or quiz.questions[questionNr].lat != 0:
-        VolundrBot.send_location(chatID, quiz.questions[questionNr].lat, quiz.questions[questionNr].long)
+        try:
+            print(f"INFO: Calculating distance and direction for question {questionNr}")
 
+            distance, angle = get_direction_and_distance((quiz.questions[questionNr].long, quiz.questions[questionNr].lat), (quiz.questions[questionNr + 1].long, quiz.questions[questionNr + 1].lat))
+
+            VolundrBot.send_message(chatID, f"The next point is {distance} meter away at a {angle} degree angle".replace(".", "\\."))
+        except Exception as error:
+            print(f"ERROR: {error}")
+            VolundrBot.send_location(chatID, quiz.questions[questionNr].lat, quiz.questions[questionNr].long)
+
+# Calculate the direction and distance between start and end point, hulde aan ChatGPT
+def get_direction_and_distance(start, end):
+    # Convert coordinates from degrees to radians
+    start_lat, start_lon = map(radians, start)
+    end_lat, end_lon = map(radians, end)
+
+    # Radius of the Earth in kilometers
+    radius = 6371.0
+
+    # Calculate differences in longitude and latitude
+    delta_lon = end_lon - start_lon
+    delta_lat = end_lat - start_lat
+
+    # Haversine formula
+    a = sin(delta_lat / 2) ** 2 + cos(start_lat) * cos(end_lat) * sin(delta_lon / 2) ** 2
+    c = 2 * atan2(sqrt(a), sqrt(1 - a))
+
+    # Calculate the distance between the points
+    distance = radius * c
+
+    # Calculate the bearing
+    y = sin(delta_lon) * cos(end_lat)
+    x = cos(start_lat) * sin(end_lat) - sin(start_lat) * cos(end_lat) * cos(delta_lon)
+    bearing = atan2(y, x)
+
+    # Convert the bearing to degrees
+    bearing = (bearing + 2 * 3.14159) % (2 * 3.14159)
+    bearing = degrees(bearing)
+
+    return round(distance * 1000), round(bearing)
 
 def finalizeQuizClient(chatID):
     VolundrBot.send_message(chatID, "*You've completed the FoxHunt*\U0001F38A\U0001F38A\U0001F38A \n\n Final stats: \n" + progressBar())
-    foxPhoto = open('./pics/WinningImageFox.png', 'rb')
+    foxPhoto = open('./pictures/WinningFox.jpeg', 'rb')
     VolundrBot.send_photo(chatID, foxPhoto)
 
 # Restart entire bot and go over
