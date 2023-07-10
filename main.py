@@ -33,7 +33,7 @@ class quiz:
     questions.append(question(
         # punt 1
         # Key
-        "GoodLuck",
+        "goodluck",
         # Question
         "What is the name of this activity?",
         # Answers
@@ -57,7 +57,7 @@ class quiz:
     questions.append(question(
         # punt 10
         # Key
-        "genuine",
+        "goodluck",
         # Question
         "What role did Volundr have in Norse mythology? He/it was :",
         # Answers
@@ -106,7 +106,7 @@ class quiz:
     questions.append(question(
         # punt 14
         # Key
-        "genuine",
+        "pottery",
         # Question
         "Which of the following units of measurement is NOT real?",
         # Answers
@@ -131,7 +131,7 @@ class quiz:
     questions.append(question(
         # punt 16
         # Key
-        "genuine",
+        "detective",
         # Question
         "What frequency does the 5G network use?",
         # Answers
@@ -156,7 +156,7 @@ class quiz:
     questions.append(question(
         # punt 19
         # Key
-        "genuine",
+        "temptation",
         # Question
         "What does IEEE stand for?",
         # Answers
@@ -181,9 +181,9 @@ class quiz:
     questions.append(question(
         # punt 20
         # Key
-        "genuine",
+        "leadership",
         # Question
-        "Which electrical engineer and entrepreneur co-founded Apple Inc. alongside Steve Jobs?",
+        "Which electrical engineer and entrepreneur cofounded Apple Inc alongside Steve Jobs?",
         # Answers
         ["Bill Gates",
         "Larry Page",
@@ -206,9 +206,9 @@ class quiz:
     questions.append(question(
         # punt 22
         # Key
-        "genuine",
+        "minimize",
         # Question
-        "In electrical engineering, what does the term \"ground\" typically refer to?",
+        "In electrical engineering, what does the term 'ground' typically refer to?",
         # Answers
         ["The connection to the Earth in an electrical circuit",
         "A type of insulating material",
@@ -218,7 +218,7 @@ class quiz:
         # a = 0     b = 1   c = 2   d = 3
         "0",
         # Text hint
-        "",
+        "This is the final location! Search for fire and you will find the treasure!",
         # Photo hint
         "pictures/point22.jpg",
         # GPS hint
