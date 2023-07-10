@@ -34,7 +34,7 @@ class quiz:
     questions.append(question(
         # punt 1
         # Key
-        "goodluck",
+        "forecast",
         # Question
         "What is the name of this activity?",
         # Answers
@@ -58,7 +58,7 @@ class quiz:
     questions.append(question(
         # punt 10
         # Key
-        "genuine",
+        "neighbour",
         # Question
         "What role did Volundr have in Norse mythology? He/it was :",
         # Answers
@@ -82,7 +82,7 @@ class quiz:
     questions.append(question(
         # punt 4
         # Key
-        "expansion",
+        "pledge",
         # Question
         "What is the total capacitance when two capacitors with a capacitance of 100uF are placed in parallel?",
         # Answers
@@ -107,14 +107,14 @@ class quiz:
     questions.append(question(
         # punt 14
         # Key
-        "pottery",
+        "drawing",
         # Question
         "Which of the following units of measurement is NOT real?",
         # Answers
         ["Tesla",
         "Siemens",
         "Philips",
-        "Watt"],
+        "Pascal"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
         "2",
@@ -132,7 +132,7 @@ class quiz:
     questions.append(question(
         # punt 16
         # Key
-        "detective",
+        "attitude",
         # Question
         "What frequency does the 5G network use?",
         # Answers
@@ -157,7 +157,7 @@ class quiz:
     questions.append(question(
         # punt 19
         # Key
-        "temptation",
+        "judgement",
         # Question
         "What does IEEE stand for?",
         # Answers
@@ -182,7 +182,7 @@ class quiz:
     questions.append(question(
         # punt 20
         # Key
-        "leadership",
+        "mother",
         # Question
         "Which electrical engineer and entrepreneur cofounded Apple Inc alongside Steve Jobs?",
         # Answers
@@ -207,17 +207,17 @@ class quiz:
     questions.append(question(
         # punt 22
         # Key
-        "minimize",
+        "forestry",
         # Question
-        "In electrical engineering, what does the term 'ground' typically refer to?",
+        "In the Marvel comics and movies, what is the name of the material that Thor's hammer is made of?",
         # Answers
-        ["The connection to the Earth in an electrical circuit",
-        "A type of insulating material",
-        "The highest potential point in a circuit",
-        "A safety mechanism to prevent electric shock"],
+        ["Vibranium",
+        "Adamantium",
+        "Promethium",
+        "Uru"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
-        "0",
+        "3",
         # Text hint
         "This is the final location! Search for fire and you will find the treasure!",
         # Photo hint
