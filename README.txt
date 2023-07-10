@@ -3,7 +3,9 @@ Hello fellow FoxHunt enjoyer!
 To compile the bot, I have used Python version 3.7.8rc1 and pyTelegramBotAPI 4.9.0. Make sure both are installed!
 
 Install Telegram Bot API via CMD with:
-	python -m pip install pyTelegramBotAPI
+	python -m pip install -r requirements.txt
+
+Then copy the example.env to .env and fill in the necessary parts
 
 To run the bot, open CMD and just run the .py file (python compiler obv)
 
