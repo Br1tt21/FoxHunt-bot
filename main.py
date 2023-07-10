@@ -1,4 +1,5 @@
 import os
+from math import sin, cos, sqrt, atan2, radians, pi, degrees
 from dotenv import load_dotenv
 
 import telebot
@@ -57,7 +58,7 @@ class quiz:
     questions.append(question(
         # punt 10
         # Key
-        "goodluck",
+        "genuine",
         # Question
         "What role did Volundr have in Norse mythology? He/it was :",
         # Answers
@@ -695,6 +696,7 @@ def query_handler(call):
         quiz.questions[questionNr].correct = 2
         VolundrBot.send_message(call.message.chat.id, response)
         VolundrBot.edit_message_reply_markup(call.message.chat.id, call.message.message_id)
+
     if quiz.answeredQuestions() == quiz.nrQuestions():
         finalizeQuizClient(call.message.chat.id)
     elif quiz.questions[questionNr].textHint != "" or quiz.questions[questionNr].textHint != "" or quiz.questions[questionNr].long != 0 or quiz.questions[questionNr].lat != 0:
@@ -749,8 +751,46 @@ def giveHint(chatID, questionNr):
         VolundrBot.send_photo(chatID, hintPhoto)
 
     if quiz.questions[questionNr].long != 0 or quiz.questions[questionNr].lat != 0:
-        VolundrBot.send_location(chatID, quiz.questions[questionNr].lat, quiz.questions[questionNr].long)
+        try:
+            print(f"INFO: Calculating distance and direction for question {questionNr}")
 
+            distance, angle = get_direction_and_distance((quiz.questions[questionNr].long, quiz.questions[questionNr].lat), (quiz.questions[questionNr + 1].long, quiz.questions[questionNr + 1].lat))
+
+            VolundrBot.send_message(chatID, f"The next point is {distance} meter away at a {angle} degree angle".replace(".", "\\."))
+        except Exception as error:
+            print(f"ERROR: {error}")
+            VolundrBot.send_location(chatID, quiz.questions[questionNr].lat, quiz.questions[questionNr].long)
+
+# Calculate the direction and distance between start and end point, hulde aan ChatGPT
+def get_direction_and_distance(start, end):
+    # Convert coordinates from degrees to radians
+    start_lat, start_lon = map(radians, start)
+    end_lat, end_lon = map(radians, end)
+
+    # Radius of the Earth in kilometers
+    radius = 6371.0
+
+    # Calculate differences in longitude and latitude
+    delta_lon = end_lon - start_lon
+    delta_lat = end_lat - start_lat
+
+    # Haversine formula
+    a = sin(delta_lat / 2) ** 2 + cos(start_lat) * cos(end_lat) * sin(delta_lon / 2) ** 2
+    c = 2 * atan2(sqrt(a), sqrt(1 - a))
+
+    # Calculate the distance between the points
+    distance = radius * c
+
+    # Calculate the bearing
+    y = sin(delta_lon) * cos(end_lat)
+    x = cos(start_lat) * sin(end_lat) - sin(start_lat) * cos(end_lat) * cos(delta_lon)
+    bearing = atan2(y, x)
+
+    # Convert the bearing to degrees
+    bearing = (bearing + 2 * 3.14159) % (2 * 3.14159)
+    bearing = degrees(bearing)
+
+    return round(distance * 1000), round(bearing)
 
 def finalizeQuizClient(chatID):
     VolundrBot.send_message(chatID, "*You've completed the FoxHunt*\U0001F38A\U0001F38A\U0001F38A \n\n Final stats: \n" + progressBar())
