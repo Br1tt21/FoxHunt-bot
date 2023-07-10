@@ -59,15 +59,14 @@ class quiz:
         # Key
         "genuine",
         # Question
-        "vraag",
+        "What role did Volundr have in Norse mythology? He/it was :",
         # Answers
-        ["1",
-        "2",
-        "3",
-        "4"],
+        ["A blacksmith who crafted wings",
+        "King Ragnar Lothbrok's hammer", 
+        "A self-proclaimed holy man"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
-        "1",
+        "0",
         # Text hint
         "",
         # Photo hint
@@ -109,15 +108,15 @@ class quiz:
         # Key
         "genuine",
         # Question
-        "vraag",
+        "Which of the following units of measurement is NOT real?",
         # Answers
-        ["1",
-        "2",
-        "3",
-        "4"],
+        ["Tesla",
+        "Siemens",
+        "Philips",
+        "Watt"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
-        "1",
+        "2",
         # Text hint
         "",
         # Photo hint
@@ -134,12 +133,12 @@ class quiz:
         # Key
         "genuine",
         # Question
-        "vraag",
+        "What frequency does the 5G network use?",
         # Answers
-        ["1",
-        "2",
-        "3",
-        "4"],
+        ["4.9-5.1GHz",
+        "24-47 GHz",
+        "2-3GHz",
+        "5GHz"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
         "1",
@@ -159,15 +158,15 @@ class quiz:
         # Key
         "genuine",
         # Question
-        "vraag",
+        "What does IEEE stand for?",
         # Answers
-        ["1",
-        "2",
-        "3",
-        "4"],
+        ["Institute of Electrical and Electronics Engineers",
+        "International Electrical Engineering Expo",
+        "Institute of Electrical and Electronics Expo",
+        "Institute of Electrical and Electronical Engineering"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
-        "1",
+        "0",
         # Text hint
         "",
         # Photo hint
@@ -184,15 +183,15 @@ class quiz:
         # Key
         "genuine",
         # Question
-        "vraag",
+        "Which electrical engineer and entrepreneur co-founded Apple Inc. alongside Steve Jobs?",
         # Answers
-        ["1",
-        "2",
-        "3",
-        "4"],
+        ["Bill Gates",
+        "Larry Page",
+        "Elon Musk",
+        "Steve Wozniak"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
-        "1",
+        "3",
         # Text hint
         "",
         # Photo hint
@@ -209,15 +208,15 @@ class quiz:
         # Key
         "genuine",
         # Question
-        "vraag",
+        "In electrical engineering, what does the term \"ground\" typically refer to?",
         # Answers
-        ["1",
-        "2",
-        "3",
-        "4"],
+        ["The connection to the Earth in an electrical circuit",
+        "A type of insulating material",
+        "The highest potential point in a circuit",
+        "A safety mechanism to prevent electric shock"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
-        "1",
+        "0",
         # Text hint
         "",
         # Photo hint
