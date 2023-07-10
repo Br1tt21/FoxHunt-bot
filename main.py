@@ -31,13 +31,14 @@ class quiz:
     questions = []
 
     questions.append(question(
+        # punt 1
         # Key
-        "pottery",
+        "GoodLuck",
         # Question
         "What is the name of this activity?",
         # Answers
         ["Foxhunt!",
-        "Cathunt", # TODO
+        "Cathunt",
         "Doghunt"],
         # Correct Answer
         # a = 0     b = 1   c = 2   d = 3
@@ -45,158 +46,16 @@ class quiz:
         # Text hint
         "",
         # Photo hint
-        "",
+        "pictures/point1.jpg",
         # GPS hint
         # Long
-        56.1234,
+        51.390488,
         # Lat
-        11.1234
+        5.554589
     ))
 
     questions.append(question(
-        # Key
-        "pottery",
-        # Question
-        "What role did Volundr have in Norse mythology?",
-        # Answers
-        ["A blacksmith from Norse myths, who was enslaved by a king but crafted wings for himself and flew away.",
-        "A hammer owned by x", # TODO
-        "A close friend to the royal family and self-proclaimed holy man"],
-        # Correct Answer
-        # a = 0     b = 1   c = 2   d = 3
-        "0",
-        # Text hint
-        "",
-        # Photo hint
-        "",
-        # GPS hint
-        # Long
-        0,
-        # Lat
-        0
-    ))
-
-    questions.append(question(
-        # Key
-        "minimize",
-        # Question
-        "Which of the following units of measurement is NOT real?",
-        # Answers
-        ["Tesla",
-        "Siemens",
-        "Philips",
-        "Watt"],
-        # Correct Answer
-        # a = 0     b = 1   c = 2   d = 3
-        "2",
-        # Text hint
-        "",
-        # Photo hint
-        "",
-        # GPS hint
-        # Long
-        0,
-        # Lat
-        0
-    ))
-
-    questions.append(question(
-        # Key
-        "expansion",
-        # Question
-        "What is the total capacitance when two capacitors with a capacitance of 100uF are placed in parallel?",
-        # Answers
-        ["50uF",
-        "100uF",
-        "200uF",
-        "400uF"],
-        # Correct Answer
-        # a = 0     b = 1   c = 2   d = 3
-        "2",
-        # Text hint
-        "",
-        # Photo hint
-        "",
-        # GPS hint
-        # Long
-        0,
-        # Lat
-        0
-    ))
-
-    questions.append(question(
-        # Key
-        "leadership",
-        # Question
-        "vraag",
-        # Answers
-        ["1",
-        "2",
-        "3",
-        "4"],
-        # Correct Answer
-        # a = 0     b = 1   c = 2   d = 3
-        "1",
-        # Text hint
-        "",
-        # Photo hint
-        "",
-        # GPS hint
-        # Long
-        0,
-        # Lat
-        0
-    ))
-
-    questions.append(question(
-        # Key
-        "temptation",
-        # Question
-        "vraag",
-        # Answers
-        ["1",
-        "2",
-        "3",
-        "4"],
-        # Correct Answer
-        # a = 0     b = 1   c = 2   d = 3
-        "1",
-        # Text hint
-        "",
-        # Photo hint
-        "",
-        # GPS hint
-        # Long
-        0,
-        # Lat
-        0
-    ))
-
-    questions.append(question(
-        # Key
-        "detective",
-        # Question
-        "vraag",
-        # Answers
-        ["1",
-        "2",
-        "3",
-        "4"],
-        # Correct Answer
-        # a = 0     b = 1   c = 2   d = 3
-        "1",
-        # Text hint
-        "",
-        # Photo hint
-        "",
-        # GPS hint
-        # Long
-        0,
-        # Lat
-        0
-    ))
-
-    questions.append(question(
+        # punt 10
         # Key
         "genuine",
         # Question
@@ -212,13 +71,513 @@ class quiz:
         # Text hint
         "",
         # Photo hint
-        "",
+        "pictures/point10.jpg",
         # GPS hint
         # Long
-        0,
+        51.389648,
         # Lat
-        0
+        5.551176
     ))
+
+    questions.append(question(
+        # punt 4
+        # Key
+        "expansion",
+        # Question
+        "What is the total capacitance when two capacitors with a capacitance of 100uF are placed in parallel?",
+        # Answers
+        ["50uF",
+        "100uF",
+        "200uF",
+        "400uF"],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "2",
+        # Text hint
+        "",
+        # Photo hint
+        "pictures/point4.jpg",
+        # GPS hint
+        # Long
+        51.388279,
+        # Lat
+        5.552619
+    ))
+
+    questions.append(question(
+        # punt 14
+        # Key
+        "genuine",
+        # Question
+        "vraag",
+        # Answers
+        ["1",
+        "2",
+        "3",
+        "4"],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "1",
+        # Text hint
+        "",
+        # Photo hint
+        "pictures/point14.jpg",
+        # GPS hint
+        # Long
+        51.387615,
+        # Lat
+        5.550548
+    ))
+
+    questions.append(question(
+        # punt 16
+        # Key
+        "genuine",
+        # Question
+        "vraag",
+        # Answers
+        ["1",
+        "2",
+        "3",
+        "4"],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "1",
+        # Text hint
+        "",
+        # Photo hint
+        "pictures/point16.jpg",
+        # GPS hint
+        # Long
+        51.386436,
+        # Lat
+        5.550095
+    ))
+
+    questions.append(question(
+        # punt 19
+        # Key
+        "genuine",
+        # Question
+        "vraag",
+        # Answers
+        ["1",
+        "2",
+        "3",
+        "4"],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "1",
+        # Text hint
+        "",
+        # Photo hint
+        "pictures/point19.jpg",
+        # GPS hint
+        # Long
+        51.385052,
+        # Lat
+        5.548051
+    ))
+
+    questions.append(question(
+        # punt 20
+        # Key
+        "genuine",
+        # Question
+        "vraag",
+        # Answers
+        ["1",
+        "2",
+        "3",
+        "4"],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "1",
+        # Text hint
+        "",
+        # Photo hint
+        "pictures/point20.jpg",
+        # GPS hint
+        # Long
+        51.384529,
+        # Lat
+        5.550787
+    ))
+
+    questions.append(question(
+        # punt 22
+        # Key
+        "genuine",
+        # Question
+        "vraag",
+        # Answers
+        ["1",
+        "2",
+        "3",
+        "4"],
+        # Correct Answer
+        # a = 0     b = 1   c = 2   d = 3
+        "1",
+        # Text hint
+        "",
+        # Photo hint
+        "pictures/point22.jpg",
+        # GPS hint
+        # Long
+        51.382748,
+        # Lat
+        5.549260
+    ))
+
+    # questions.append(question(
+    #     # punt 2
+    #     # Key
+    #     "pottery",
+    #     # Question
+    #     "What role did Volundr have in Norse mythology? He/it was :",
+    #     # Answers
+    #     ["A blacksmith who crafted wings",
+    #     "King Ragnar Lothbrok's hammer", 
+    #     "A self-proclaimed holy man"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "0",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point2.jpg",
+    #     # GPS hint
+    #     # Long
+    #     0,
+    #     # Lat
+    #     0
+    # ))
+
+    # questions.append(question(
+    #     # punt 3
+    #     # Key
+    #     "minimize",
+    #     # Question
+    #     "Which of the following units of measurement is NOT real?",
+    #     # Answers
+    #     ["Tesla",
+    #     "Siemens",
+    #     "Philips",
+    #     "Watt"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "2",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point3.jpg",
+    #     # GPS hint
+    #     # Long
+    #     0,
+    #     # Lat
+    #     0
+    # ))
+
+    # questions.append(question(
+    #     # punt 5
+    #     # Key
+    #     "leadership",
+    #     # Question
+    #     "What frequency does the 5G network use?",
+    #     # Answers
+    #     ["4.9-5.1GHz",
+    #     "24-47 GHz",
+    #     "2-3GHz",
+    #     "5GHz"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point5.jpg",
+    #     # GPS hint
+    #     # Long
+    #     0,
+    #     # Lat
+    #     0
+    # ))
+
+    # questions.append(question(
+    #     # punt 6
+    #     # Key
+    #     "temptation",
+    #     # Question
+    #     "What does IEEE stand for?",
+    #     # Answers
+    #     ["Institute of Electrical and Electronics Engineers",
+    #     "International Electrical Engineering Expo",
+    #     "Institute of Electrical and Electronics Expo",
+    #     "Institute of Electrical and Electronical Engineering"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "0",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point6.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.388668,
+    #     # Lat
+    #     5.550944
+    # ))
+
+    # questions.append(question(
+    #     # punt 7
+    #     # Key
+    #     "detective",
+    #     # Question
+    #     "Which electrical engineer and entrepreneur co-founded Apple Inc. alongside Steve Jobs?",
+    #     # Answers
+    #     ["Bill Gates",
+    #     "Larry Page",
+    #     "Elon Musk",
+    #     "Steve Wozniak"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "3",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point7.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.389198,
+    #     # Lat
+    #     5.550808
+    # ))
+
+    # questions.append(question(
+    #     # TODO: beetje matie vraag
+    #     # punt 8
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "In electrical engineering, what does the term \"ground\" typically refer to?",
+    #     # Answers
+    #     ["The connection to the Earth in an electrical circuit",
+    #     "A type of insulating material",
+    #     "The highest potential point in a circuit",
+    #     "A safety mechanism to prevent electric shock"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "0",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point8.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.389198,
+    #     # Lat
+    #     5.550808
+    # ))
+
+    # questions.append(question(
+    #     # punt 9
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point9.jpg",
+    #     # GPS hint
+    #     # Long
+    #     0,
+    #     # Lat
+    #     0
+    # ))
+
+    # questions.append(question(
+    #     # punt 11
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point11.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.388161,
+    #     # Lat
+    #     5.551170
+    # ))
+
+    # questions.append(question(
+    #     # punt 12
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point12.jpg",
+    #     # GPS hint
+    #     # Long
+    #     0,
+    #     # Lat
+    #     0
+    # ))
+
+    # questions.append(question(
+    #     # punt 13
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point13.jpg",
+    #     # GPS hint
+    #     # Long
+    #     0,
+    #     # Lat
+    #     0
+    # ))
+
+    # questions.append(question(
+    #     # punt 15
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point15.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.387184,
+    #     # Lat
+    #     5.550110
+    # ))
+
+    # questions.append(question(
+    #     # punt 17
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point17.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.386188,
+    #     # Lat
+    #     5.548547
+    # ))
+
+    # questions.append(question(
+    #     # punt 18
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point18.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.385658,
+    #     # Lat
+    #     5.549006
+    # ))
+
+    # questions.append(question(
+    #     # punt 21
+    #     # Key
+    #     "genuine",
+    #     # Question
+    #     "vraag",
+    #     # Answers
+    #     ["1",
+    #     "2",
+    #     "3",
+    #     "4"],
+    #     # Correct Answer
+    #     # a = 0     b = 1   c = 2   d = 3
+    #     "1",
+    #     # Text hint
+    #     "",
+    #     # Photo hint
+    #     "pictures/point21.jpg",
+    #     # GPS hint
+    #     # Long
+    #     51.383633,
+    #     # Lat
+    #     5.550105
+    # ))
 
     @classmethod
     def nrQuestions(cls):
@@ -269,7 +628,7 @@ Good Luck \U0001F340\, may the best team win \.\.\.\."
 def startMessage(message):
     VolundrBot.send_chat_action(message.chat.id, 'typing')
     VolundrBot.reply_to(message, welcomeMessage)
-    foxPhoto = open('./pics/FoxHunt.png', 'rb')
+    foxPhoto = open('./pictures/FoxHunt.jpeg', 'rb')
     VolundrBot.send_photo(message.chat.id, foxPhoto)
 
     uFirstName, uLastName, uID = str(message.from_user.first_name), str(message.from_user.last_name), str(message.from_user.id)
@@ -396,7 +755,7 @@ def giveHint(chatID, questionNr):
 
 def finalizeQuizClient(chatID):
     VolundrBot.send_message(chatID, "*You've completed the FoxHunt*\U0001F38A\U0001F38A\U0001F38A \n\n Final stats: \n" + progressBar())
-    foxPhoto = open('./pics/WinningImageFox.png', 'rb')
+    foxPhoto = open('./pictures/WinningFox.jpeg', 'rb')
     VolundrBot.send_photo(chatID, foxPhoto)
 
 # Restart entire bot and go over
